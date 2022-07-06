@@ -3,27 +3,38 @@ server:
 
   #通过访问localhost:8090/doc.html 即可查看文档
   
+#wd-auth:
+#  swagger:
+#    enabled: true #是否启用
+#    #----------单分组配置----------
+##    title: "在线文档"   #标题
+##    group: ""   #自定义组名
+##    description: "在线文档" #描述
+##    version: "1.0"   #版本
+##    contact: #new Contact()   #联系人
+##      name: "woldier"
+##      url: "www.woldier.com"
+##      email: "1098582358@qq.com"
+##    basePackage: "com.woldier.swagger.controller"   #swagger会解析的包路径
+##    basePath:   #swagger会解析的url规则
+##    excludePath :  #swagger会排除解析的url规则
+#    #--------------多分组配置---------
+#    docket:
+#      user:
+#        title: "用户模块"
+#        basePackage: com.woldier.swagger.controller.user
+#      menu:
+#        title: "菜单模块"
+#        basePackage: com.woldier.swagger.controller.menu
+#
+
+
 wd-auth:
   swagger:
-    enabled: true #是否启用
-    #----------单分组配置----------
-#    title: "在线文档"   #标题
-#    group: ""   #自定义组名
-#    description: "在线文档" #描述
-#    version: "1.0"   #版本
-#    contact: #new Contact()   #联系人
-#      name: "woldier"
-#      url: "www.woldier.com"
-#      email: "1098582358@qq.com"
-#    basePackage: "com.woldier.swagger.controller"   #swagger会解析的包路径
-#    basePath:   #swagger会解析的url规则
-#    excludePath :  #swagger会排除解析的url规则
-    #--------------多分组配置---------
     docket:
       user:
-        title: "用户模块"
+        title: "用户"
         basePackage: com.woldier.swagger.controller.user
       menu:
         title: "菜单模块"
         basePackage: com.woldier.swagger.controller.menu
-    
