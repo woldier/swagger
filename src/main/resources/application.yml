@@ -1,0 +1,5 @@
+server:
+  port: 8090
+
+  #通过访问localhost:8090/swagger-ui.html 即可查看文档
+
